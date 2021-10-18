@@ -1,4 +1,4 @@
-public class LongestLCS {
+public class LCS {
     public static void main(String[] args) {
         String X = "ABCDGH";
         String Y = "AEDFHR";

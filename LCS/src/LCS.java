@@ -1,5 +1,6 @@
 public class LCS {
     public static void main(String[] args) {
+//        Longest Common Subsequence
         String X = "ABCDGH";
         String Y = "AEDFHR";
         int len;

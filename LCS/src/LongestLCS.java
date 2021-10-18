@@ -20,11 +20,11 @@ public class LongestLCS {
                     sb.append(x.charAt(n-1));
                     n--;
                     m--;
-                }else{
+                }else
                     if(dp[n][m-1] > dp[n-1][m])
                         m--;
                     else n--;
-                }
+
             }else{
                 n--;
             }

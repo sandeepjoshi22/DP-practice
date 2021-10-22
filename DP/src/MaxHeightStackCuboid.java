@@ -11,10 +11,12 @@ public class MaxHeightStackCuboid {
     }
 
     private static int maxHeight(int[][] cuboids) {
+        /* Rotating all boxes such that height is max*/
         for (int[] cube : cuboids) Arrays.sort(cube);
         Arrays.stream(cuboids).map(Arrays::toString).forEach(System.out::println);
         System.out.println(" ");
 
+        /* Sorting boxes such that w3>w2>w1 and l3>l2>l1 and h3>h2>h1*/
         Arrays.sort(cuboids, (a, b) -> (a[0] + a[1] + a[2]) - (b[0] + b[1] + b[2]));
         Arrays.stream(cuboids).map(Arrays::toString).forEach(System.out::println);
 

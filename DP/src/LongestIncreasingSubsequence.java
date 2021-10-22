@@ -6,6 +6,7 @@ public class LongestIncreasingSubsequence {
     public static void main(String[] args) {
         //LIS
         int[] nums = {99,100,1,2,101,3};
+        //int[] nums = {1,100,3,2,6};
         int[] res = new int[nums.length];
         int len = findLISLength(nums,res);
         System.out.println("Length of LIS is " + len);
@@ -47,6 +48,8 @@ public class LongestIncreasingSubsequence {
         }
 
         Arrays.stream(res).forEach(System.out::println);
+
+        System.out.println(Arrays.toString(res));
 
         return Arrays.stream(res).max().getAsInt();
 
